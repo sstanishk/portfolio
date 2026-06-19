@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Tanishk S S | Portfolio - Cloud Engineer & Full Stack Developer</title>
+    <meta name="description" content="Professional portfolio of Tanishk S S, a B.Tech Information Technology student specializing in Cloud Computing, AWS, DevOps, and Full Stack Development." />
+    <meta name="keywords" content="Tanishk S S, Portfolio, B.Tech IT, Cloud Engineer, Full Stack Developer, AWS, Docker, LeetCode, React" />
+    <meta name="author" content="Tanishk S S" />
+    
+    <!-- FOUC Prevention & Initial Theme Loading -->
+    <meta name="color-scheme" content="dark light">
+    <script>
+      {
+        const colorScheme = localStorage.getItem("color-scheme");
+        if (colorScheme) {
+          document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+          if (colorScheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          }
+        } else {
+          // Default to dark mode if no selection exists
+          document.documentElement.classList.add('dark');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
